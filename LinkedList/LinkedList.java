@@ -71,13 +71,14 @@ public class LinkedList {
     }
     public static void main(String[] args){
         LinkedList linkedList=new LinkedList();
-        linkedList.insertAtStart("Joel");
-        //System.out.println(linkedList.isEmpty());
-        linkedList.insertAtStart("Kanyi");
-        linkedList.insertAtStart("Michael");
-        linkedList.insertAtStart("Johnson");
-        linkedList.insertAtStart("Owallah");
-        linkedList.insertAtStart("Wanjiru");
+        System.out.println("How many elements do you want to insert :");
+        int n = sc.nextInt();
+        System.out.println("Enter the elements :");
+        for(int i=0;i<n;i++) {
+            String s = sc.next();
+            linkedList.insertAtStart(i);
+        }
+        
 
         linkedList.deleteFirst();
         linkedList.deleteAnywhere("Kanyi");
